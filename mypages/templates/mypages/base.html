@@ -1,0 +1,248 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% if title %}
+    <title>  ضغط الدم | {{title}}</title>
+    {% else%}
+    <title  style="font-family: 'Cairo', sans-serif;">  ضغط الدم </title>
+    {% endif %}
+
+    <link rel="stylesheet" href="{% static 'mypages/css/main.css' %}">
+
+
+   
+    
+    
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'mypages/css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'mypages/css/main.css' %}">
+
+  </head>
+
+  <body> 
+
+      
+
+      <!-- start upper-bar -->
+    <div class="upper-bar" style="background-color: white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8  text-center" >
+            <i><img src="{% static 'mypages/images/logoicon.svg' %}" alt="logo" width="35px"></i>  
+            <i ><span>  ضغط </span><span style= "color: #F17476 ">الدم</span> </i>  
+
+          </div>
+            
+             
+        </div>
+      </div>
+    </div>
+     <!-- end upper -->
+
+
+
+     <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg  navbar-light" >
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: xx-large;" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" dir="rtl">
+            <li
+            {% if '/' == request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %} 
+             >
+              <a class="nav-link" href="{%  url 'home' %}">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li
+             {% if 'readings' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'readings' %}">قراءات ضغط الدم</a>
+            </li>
+            <li
+             {% if 'symptoms' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'symptoms' %}"> الأعراض والأسباب</a>
+            </li>
+            <li
+             {% if 'influences' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'influences' %}">التأثيرات</a>
+            
+            </li>
+            <li
+             {% if 'methods' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'methods' %}">طرق الوقاية</a>
+            </li>
+
+            <li
+             {% if 'system' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'system' %}">النظام الصحي</a>
+            </li>
+
+            <li
+             {% if 'tips' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'tips' %}">نصائح</a>
+            </li>
+
+            <li
+             {% if 'about' in request.path %}
+              class="nav-item active"
+            {% else %}  
+             class="nav-item "
+            {% endif %}
+             >
+              <a class="nav-link" href="{%  url 'about' %}">حول</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+      </nav>
+<!-- end navbar -->
+
+{% block content %}
+
+{% endblock content%}
+
+
+
+
+
+
+
+
+
+
+<!-- start footer-->
+
+
+
+<section id="footer " class="footer">
+  
+  <p><h4 style="text-align: center;color: #000066;font-weight:bold;"> جميع الحقوق محفوظة لمبادرة &copy;2020</h4></p>
+  <p><h4 style="text-align: center;color: #000066; font-weight: bold;">  &nbsp; Code For Iraq </h4></p>
+
+  <ul style="list-style-type: none; text-align: center;">
+    <li style="padding-right: 20px;">
+      <a class="mylink"  href="#"><i class="fab fa-facebook-square fa-3x" aria-hidden="true "  ></i>    </a>
+      <a class="mylink"  href="#"><i class="fab fa-twitter-square fa-3x" aria-hidden="true" ></i>    </a>
+      <a class="mylink"  href="#"><i class="fab fa-google-plus-square fa-3x" aria-hidden="true" ></i>    </a>
+    </li>
+  </ul>
+  
+
+
+</section>
+
+<!-- end footer-->
+
+
+
+    <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+       
+      <script src="{% static 'mypages/js/jquery-3.4.1.slim.min.js' %}"></script>
+      <script src="{% static 'mypages/js/popper.min.js' %}"></script>
+      <script src="{% static 'mypages/js/bootstrap.min.js' %}"></script>
+       <script src="{% static 'mypages/js/fontawesome-all.min.js' %}"></script>
+      
+
+
+
+
+
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+   $("a").on('click', function(event) {
+ 
+     if (this.hash !== "") {
+
+       event.preventDefault();
+
+       var hash = this.hash;
+
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 800, function(){
+   
+         window.location.hash = hash;
+       });
+     } 
+   });
+ });
+ </script>
+
+
+<script>
+
+  window.onscroll = function(){
+    scrollFunction();
+  };
+  function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+      document.getElementById("btnScroll").style.display = "block";
+  
+    }else{
+      document.getElementById("btnScroll").style.display = "none";
+    }
+  } 
+  
+  function toUp(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop=0;
+  }
+  </script>
+
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,144 @@
+@font-face {
+font-family: 'Cairo';
+src: url('../fonts/Cairo-Regular.ttf') format("truetype"),
+     local('Cairo');
+
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+/* <! -- upper-bar --!> */
+.upper-bar {
+    background-color: #ffffff;
+    color: #292F61 ;
+    padding: 10px;
+    font-family: cairo;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+ /* < end upper-bar> */
+
+
+
+
+ /* < start navbar> */
+
+.navbar-light .navbar-nav .nav-link {
+
+    color: #292F61 ;
+    font-size: 22px;
+    
+    font-weight: bold; 
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+
+    
+    color: #ed1d24;
+}
+
+.navbar-light .navbar-nav .active>.nav-link { 
+    color: #ed1d24 !important 
+ }   
+
+ /* <end  navbar> */
+
+
+
+ /* <start home> */
+.myline{
+
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+
+
+
+    
+   
+    
+}
+
+
+
+.myrow{
+    
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    
+
+
+}
+
+.mycol{
+    
+    padding-left: 0;
+    padding-right: 0;
+    
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+ /* < end home> */
+
+  /* < start myread> */
+
+.mycard{
+
+    text-align: right;
+    color: #ffffff;
+    list-style-type: circle;
+    
+    
+    direction: rtl;
+    
+    
+
+
+    
+}
+
+ /* <end myread> */
+
+
+
+
+
+
+     /* <start footer> */
+
+
+.footer{
+    
+    background-color:#DEECF7 ;
+    padding-top:50px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+
+}
+a.mylink:hover {
+color: #F17476 ;
+}
+
+    /* <end footer> */
+
+
+
+
+
+
+
+
+
+
+
